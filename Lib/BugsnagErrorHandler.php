@@ -48,7 +48,6 @@ class BugsnagErrorHandler extends ErrorHandler
             $bugsnag->setReleaseStage(Configure::read('BugsnagCakephp.stage'));
             $bugsnag->setType('CakePHP');
             $bugsnag->setEndpoint(Configure::read('BugsnagCakephp.endpoint'));
-            $bugsnag->setUseSSL(Configure::read('BugsnagCakephp.usessl'));
             $bugsnag->setAppVersion(Configure::version());
         }
 
